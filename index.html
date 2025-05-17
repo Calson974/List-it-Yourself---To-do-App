@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List It Yourself - Todo App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>List It Yourself</h1>
+      <p>A simple to-do list application</p>
+    </div>
+    
+    <div class="todo-app">
+      <div class="input-section">
+        <input type="text" id="task-input" placeholder="Add a new task...">
+        <button id="add-button">+</button>
+      </div>
+      
+      <div id="todos-container">
+        <!-- Tasks will be added here dynamically -->
+        <div id="empty-state" class="empty-state">
+          <div class="clipboard-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+              <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+            </svg>
+          </div>
+          <p>Your list is empty</p>
+          <p class="subtitle">Add a new task to get started</p>
+        </div>
+        <ul id="todo-list"></ul>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>Your tasks are saved locally in your browser</p>
+      <p class="dev"><a href="https://wa.me/+237681849054" class="dev" target="_blank">Contact developer</a></p>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
